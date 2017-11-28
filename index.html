@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<style>
+	.section{
+		text-align: justify;
+	}
+</style>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="#880e4f">
+				Configuração Access Point
+			</section>
+			<section data-background="#880e4f">
+				Grupo:
+				<ul>
+					<li>Francisco Jonathan Vasconcelos Monteiro Nº11</li>
+					<li>Francisco Ronniery de Sousa N°12</li>
+					<li>Hallysson Ribeiro Alexandre Nº 14</li>
+					<li>Paulo Vitor de Melo Nº 35</li>
+				</ul>
+			</section>
+			<section data-background="#880e4f">
+				<section data-background="#880e4f">
+					Situação Problema
+				</section>
+				<section data-background="#880e4f" class="section">
+					Um dos problemas gerais que pode ocorrer durante a configuração de cada modem, seria justamente alguma falha de configuração, um modo que foi configurado que o dispositivo não é adaptado para o modo desejado. As máquinas que se conectam nesses dois novos Access point após algum tempo ficam sem conectividade com a rede, se os usuários quiserem abrir ou salvar algum arquivo nas pastas da rede, por exemplo, (mapeamentos) não conseguem acessar, mostrando uma mensagem parecida com essa: "essa conexão foi perdida ou não foi restaurada", a conexão com a internet, e-mail continua funcionando.
+				</section>
+				<section data-background="#880e4f" class="section">
+					Para resolver esse problema temporariamente é só pigar a máquina que você quer acessar e a máquina começa a enxergar novamente, mas apenas a máquina que você conectou. No modo Bridge o grande problema é que as maquinas só podem ter uma comunicação direta de dois para dois dispositivos. Já o modo repetição, eles só vão gerar um erro, caso há uma conexão falha devido o cabeamento correto, ou por falha interna na rede.
+				</section>
+				<section data-background="#880e4f">
+					Como Resolver?
+					<br>
+					<img src="img/pensando.gif">
+				</section>	
+				<section data-background="#880e4f">
+					"Cada caso é um caso"
+					<br>
+					Dependendo do projeto pode optar por 3 tipos:
+					<br>
+					<ul>
+						<li>Modo AP(Access Point) ou Ponto de Acesso</li>
+						<li>Modo Bridge (Modo Ponte)</li>
+						<li>Modo Repetidor</li>
+					</ul>
+					Seguindo respectivamente, vamos falar de modo aprofundado as características de cada um.
+				</section>
+			</section>
+			<section data-background="#880e4f">
+				<section>
+					Access Point
+				</section>
+				<section class="section">
+					O Access Point é um modo do dispositivo que lhe permite de certa forma interligar duas redes wireless (sem fio) entre uma rede, vários dispositivos ou até mesmo um site. Em geral ele se conecta a uma rede cabeada e fornece uma conexão Wireless para dispositivos a uma determinada distância.
+				</section>
+				<section class="section">
+					Bom, há várias formas de se configurar de até mesmo dispositivo access point. A configuração depende do serviço a ser prestado pelo access point, que nem sempre é um processo muito simples, pois os dispositivos são muitos versáteis, ou seja, oferecem vários modos de configuração para cada modo de configuração, e de certa forma fica até difícil de se escolher a configuração desejada.
+				</section>
+				<section class="section">
+					Há várias outras maneiras de utilizar um access point, mas nem todos tem as mesmas possibilidades de interligação. Sempre verifique se o modelo a ser adquirido irá realmente atender às suas necessidades e se tem o modo de operação necessário a isto.
+				</section>
+			</section>
+			<section data-background="#880e4f">
+				<section>
+					Bridge
+				</section>
+				<section class="section">
+					O modo Bridge (Modo Ponte) quando um modem está na configurado para o modo bridge, ocorre uma conexão direta dos pacotes enviados para o computador conectado a rede já que há apenas uma rota e caminho da rede a ser seguido.
+				</section>
+				<section class="section">
+					A analogia com uma ponte é bem interessante para explicar o funcionamento do modo bridge em dispositivos de rede. Um túnel também seria uma analogia interessante. O túnel ou a ponte (modo bridge) liga duas redes de comunicação entre si.
+				</section>
+				<section class="section">
+					No caso do modem as duas partes que estão sendo ligadas não tem o mesmo protocolo de comunicação e nesta ligação o protocolo é convertido.
+				</section>
+			</section>
+			<section data-background="#880e4f">
+				<section>
+					Repetidor
+				</section>
+				<section class="section">
+					Já o modo Repetidor é a comunicação direta entre dois ou mais dispositivos encarregados de distribuir a rede compartilhada, e que um deles vão compartilhar a rede, como sendo a rede “primária”.
+				</section>
+			</section>
+			<section data-background="#880e4f">
+				OBRIGADO PELA ATENÇÃO!
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+	</html>
